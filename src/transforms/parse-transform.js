@@ -23,7 +23,7 @@ module.exports = function(value, outputPath) {
 
         const file = image.getAttribute('src');
         
-        if (file.indexOf('http') < 0) {
+        if (file.indexOf('http') < 0 && !image.getAttribute('width') && !image.getAttribute('height')) {
           const dimensions = getSize('src' + file);
           
           image.setAttribute('width', dimensions.width);

@@ -6,6 +6,8 @@
 
   // Set theme aliases
   --color-mode: 'light';
+  --color-code-bg: #{get-color('dark')};
+  --color-code-text: #{get-color('light')};
   --color-bg: #{get-color('light')};
   --color-bg-glare: #{get-color('light')};
   --color-text: #{get-color('dark')};
@@ -13,10 +15,10 @@
   --color-selection-text: #{get-color('light')};
   --color-selection-bg: #{get-color('dark')};
   --color-stroke: #{get-color('mid')};
-  --color-action-bg: #{get-color('primary')};
-  --color-action-text: #{get-color('light')};
   --color-theme-primary: #{get-color('primary')};
   --color-theme-primary-glare: #{get-color('primary-glare')};
+  --color-action-bg: #{get-color('primary')};
+  --color-action-text: #{get-color('light')};
   --color-theme-highlight: #{get-color('highlight')};
   --color-theme-highlight-block: #{get-color('highlight')};
 }
@@ -25,6 +27,7 @@
   --color-bg: #{get-color('dark')};
   --color-bg-glare: #{get-color('slate')};
   --color-text: #{get-color('light')};
+  --color-text-glare: #{get-color('light')};
   --color-selection-text: #{get-color('dark')};
   --color-selection-bg: #{get-color('light')};
   --color-stroke: #{get-color('slate')};

@@ -4,8 +4,8 @@
  * @author ericwbailey
  */
 
-code[class*='language-'],
-pre[class*='language-'] {
+code/*[class*='language-']*/,
+pre/*[class*='language-']*/ {
   color: #f8f8f2;
   background: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -25,10 +25,11 @@ pre[class*='language-'] {
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
-  padding: 0.1em;
+:not(pre) > code/*[class*='language-']*/ {
+  padding: 0.1em 0.15em;
   border-radius: 0.3em;
   white-space: normal;
+  background: var(--color-dark);
 }
 
 .token.comment,

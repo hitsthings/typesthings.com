@@ -36,6 +36,9 @@ module.exports = function(config) {
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
   config.addPassthroughCopy('src/robots.txt');
 
+  // custom transform library
+  config.setLibrary('md', markdownFilter.lib);
+
   const now = new Date();
 
   // Custom collections

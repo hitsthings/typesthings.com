@@ -2,8 +2,7 @@ const markdownIt = require('markdown-it')({
   html: true,
   breaks: true,
   linkify: true
-});
+}).use(require('markdown-it-imsize'));
 
-module.exports = function markdown(value) {
-  return markdownIt.render(value);
-};
+module.exports = value => markdownIt.render(value);
+module.exports.lib = markdownIt;

@@ -35,18 +35,23 @@
     }
 
     code {
-      font-size: 1.2em;
-      color: var(--color-theme-primary);
+      color: #00e0e0;// matches syntax highlight for keywords //var(--color-theme-primary);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       font-weight: 600;
       margin-left: 0.01ch;
       margin-right: 0.01ch;
     }
 
     pre > code {
+      color: var(--color-code-text);
+      font-size: 1.2em;
       margin-right: 0;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      //border: 1px solid rgba(255, 255, 255, 0.1);
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+    }
+    pre > code:not([class*='language-']) {
+      color: #00e0e0;// matches syntax highlight for keywords
     }
 
     blockquote {
@@ -81,7 +86,7 @@
     }
 
     figure,
-    pre > code,
+    > pre > code,
     .video-player,
     video {
       width: 100vw;
@@ -99,6 +104,9 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     }
 
+    figure {
+      text-align: center;
+    }
     figure img {
       position: relative;
       z-index: 1;
